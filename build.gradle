@@ -1,0 +1,36 @@
+//allprojects {
+//    repositories {
+//        jcenter()
+//    }
+//}
+//subprojects {
+//    version = '1.0'
+//}
+
+apply plugin: 'base'
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+//subprojects {
+//    apply plugin: 'java-base'
+//
+//    sourceCompatibility = 11
+//    version = '1.0'
+//
+//    repositories {
+//        mavenCentral()
+//    }
+//
+//    sourceSets {
+//        main {
+//            java.srcDir "$projectDir/java"
+//            resources.srcDir "$projectDir/java"
+//        }
+//    }
+//}
